@@ -77,6 +77,7 @@ VITE_API_URL=http://127.0.0.1:8000/api/v1/
    ```
 3. Apply database migrations:
    ```bash
+   python manage.py makemigrations
    python manage.py migrate
    ```
 4. Start the backend server with Uvicorn:
