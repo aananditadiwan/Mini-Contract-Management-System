@@ -44,8 +44,8 @@ MASTER_DBPASSWORD=admin
 MASTER_DBHOST=localhost
 MASTER_DBPORT=5435
 MASTER_SCHEMANAME=contract_db
-
-VITE_API_URL=http://127.0.0.1:8000/api/v1/
+VITE_API_URL=http://backendUrl:port/api/v1/contractApp
+VITE_WS_URL=ws://backendUrl:port/ws/contractStatus/
 ```
 
 ## Local Development Guide
