@@ -7,7 +7,7 @@ const App = () => {
   const [status, setStatus] = useState({});
 
   useEffect(() => {
-    const statusSocket = new WebSocket('ws://127.0.0.1:8000/ws/contractStatus/');
+    const statusSocket = new WebSocket(import.meta.env.VITE_WS_URL);
 
     statusSocket.onmessage = (e) => {
       const data = JSON.parse(e.data);
