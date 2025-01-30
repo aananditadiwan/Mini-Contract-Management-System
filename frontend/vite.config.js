@@ -10,6 +10,12 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '../../');
 
   return {
+    server: {
+      host: '0.0.0.0', 
+      allowedHosts: [
+        'mini-contract-management-system-1.onrender.com',       //for render deployment only
+      ],
+    },
     plugins: [
       tailwindcss(),
       react(),
