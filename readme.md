@@ -25,8 +25,6 @@ Ensure you have the following installed:
 4. Create the database and schema:
    ```sql
    CREATE DATABASE contract_app;
-   \\c contract_app;
-   CREATE SCHEMA contract_db;
    ```
 5. Exit the PostgreSQL shell:
    ```bash
