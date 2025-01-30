@@ -79,9 +79,6 @@ DATABASES = {
             'PASSWORD': os.environ.get('MASTER_DBPASSWORD'),
             'HOST': os.environ.get('MASTER_DBHOST'),
             'PORT': os.environ.get('MASTER_DBPORT'),
-            'OPTIONS': {
-                'options': '-c search_path='+os.environ.get('MASTER_SCHEMANAME')
-            },
         },
 }
 
